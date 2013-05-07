@@ -5,11 +5,11 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 *:focus {outline: none;}
 
-span { width: 21px; height: 16px; display: inline-block;}
-
 #contents { width: 300px; white-space: nowrap; margin: 2px 4px;}
 #contents img { width: 16px;}
 #contents a {text-overflow: ellipsis; overflow: hidden; width: 100%; display: inline-block;}
+
+.selected {font-weight: bold;}
 
 h2 {
   font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
@@ -36,14 +36,8 @@ li:last-child {
 li a {
   text-decoration: none;
   color: #000;
-  /*display: block;*/
-  /*width: 200px;*/
-
-/*  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-  transition: font-size 0.3s ease, background-color 0.3s ease;*/
 }
 
-li a:hover {
-  /*font-size: 25px;*/
+li a:hover, .selected {
   background: #f6f6f6;
 }

@@ -18,6 +18,9 @@ module.exports = function(grunt) {
 			}
 		},
 		uglify: {
+			options: {
+				banner: '/*! Copyright (c) <%= grunt.template.today("yyyy") %> by Xiaoxin Lu */\n'
+			},
 			minify: {
 				files: compiledFiles
 			}

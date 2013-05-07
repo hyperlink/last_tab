@@ -4,7 +4,7 @@ var ct = chrome.tabs, lastTabs = []
 
 var lastTabLimit = 50
 
-setTimeout(populateInitialTabs, 5e3)
+setTimeout(populateInitialTabs, 2e3)
 
 ct.onActivated.addListener(function onTabActivated (info) {
 	console.log("tabId onActivated", info.tabId, info.windowId)
