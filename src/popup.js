@@ -1,5 +1,6 @@
 "use strict";
 
+var MAX_TO_RENDER = 10
 var lastTabs = chrome.extension.getBackgroundPage().lastTabs
 var length = lastTabs.length
 var ct = chrome.tabs, cw = chrome.windows
@@ -94,7 +95,6 @@ function getSelectedItem(fetchDataset) {
 	return anchor
 }
 
-var MAX_TO_RENDER = 5
 function render() {
 	var count = 0
 	var output = []
